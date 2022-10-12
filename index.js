@@ -186,4 +186,8 @@ console.log(emotionsArray)
 
 function getEmotionRadio(cats){
     let radioItems =''
+    const emotions = getEmotionsArray(cats)
+    for(let emotion of emotions){
+        radioItems += `<p>${}</p>`
+    }
 }
