@@ -169,6 +169,8 @@ const catsData = [
     },
 ]
 
+let emotionRadio = document.getElementById("emotion-radios")
+
 function getEmotionsArray(cats){
     const emotionsArray = []
     // we want to iterate(access each element one by one) using the for loop to iterate through the cats
