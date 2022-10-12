@@ -175,11 +175,15 @@ function getEmotionsArray(cats){
     const emotionsArray = []
     // we want to iterate(access each element one by one) using the for loop to iterate through the cats
     for (let i = 0; i < cats.length; i++){
-        // his for loop will iterate through the cats emotionsTags
+        // this for loop will iterate through the cats emotionsTags
         for (let j=0; j < cats[i].emotionTags.length; j++){
             // and the emotionTags will be pushed one by one to the emotionArray
                 emotionsArray.push(cats[i].emotionTags[j])
         }
     }
 console.log(emotionsArray)
+}
+
+function getEmotionRadio(cats){
+    let radioItems =''
 }
