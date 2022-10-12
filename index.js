@@ -188,6 +188,9 @@ function getEmotionRadio(cats){
     let radioItems =''
     const emotions = getEmotionsArray(cats)
     for(let emotion of emotions){
-        radioItems += `<p>${}</p>`
+        // so we want to loop through emotions and update the radioItems
+        radioItems += `<p>${emotion}</p>`
     }
+    // outside the for of code block we want to render out our emotions
+    emotionRadios.innerHTML = radioItems
 }
