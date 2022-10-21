@@ -37,3 +37,4 @@ function getEmotionRadio(cats){
 }
 
 
+renderEmotionsRadios(catsData)
