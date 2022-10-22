@@ -5,9 +5,9 @@ const emotionRadios = document.getElementById('emotion-radios')
 // so we want to add an event listener to emotionRadios to help us highlight our option
 emotionRadios.addEventListener('change', highlightCheckedOption)
 
+// we add a fxn
 function highlightCheckedOption(e){
-
-    console.log(e.target.id)
+    document.getElementById(e.target.id).classList.add('highlight')
 }
 
 function getEmotionsArray(cats){
