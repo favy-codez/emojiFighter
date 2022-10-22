@@ -5,6 +5,7 @@ const btn = document.getElementById('get-image-btn')
 
 
 btn.addEventListener ("click", getMatchingCatsArray)
+
 function getMatchingCatsArray (e){
     const checkedRadio = document.querySelector('input[type = "radio"]:checked')
     console.log(checkedRadio.value)
