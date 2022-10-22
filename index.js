@@ -7,7 +7,8 @@ const btn = document.getElementById('get-image-btn')
 btn.addEventListener ("click", getMatchingCatsArray)
 
 function getMatchingCatsArray (){
-    if(){
+    // so we created an if statement 
+    if(document.querySelector('input[type="radio"]:checked')){
         const selectedEmotions = document.querySelector('input[type="radio"]:checked').value
         console.log(selectedEmotions)
     }
