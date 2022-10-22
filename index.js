@@ -8,7 +8,12 @@ emotionRadios.addEventListener('change', highlightCheckedOption)
 // we add a fxn that adds the styling (highlight) when we click on the radio and also listen for change
 function highlightCheckedOption(e){
     // so we want to ta
+    const radios = document.getElementsByClassName("radio")
     
+    for(radio of radios){
+
+    } 
+
     document.getElementById(e.target.id).parentElement.classList.add('highlight')
 }
 
