@@ -1,6 +1,14 @@
 import { catsData } from '/data.js'
 
 const emotionRadios = document.getElementById('emotion-radios')
+const btn = document.getElementById('get-image-btn')
+
+
+btn.addEventListener ("click", getMatchingCatsArray)
+function getMatchingCatsArray (e){
+    
+}
+
 
 // so we want to add an event listener to emotionRadios to help us highlight our option
 emotionRadios.addEventListener('change', highlightCheckedOption)
@@ -11,7 +19,6 @@ function highlightCheckedOption(e){
     const radios = document.getElementsByClassName("radio")
     document.getElementById(e.target.id).parentElement.classList.remove('highlight')
     for(radio of radios){
-
     } 
 
     document.getElementById(e.target.id).parentElement.classList.add('highlight')
