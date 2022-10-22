@@ -75,6 +75,7 @@ label{
     cursor: pointer;
 }
 
+/* highlight styling */
 .highlight{
     background-color: #fff0ee;
     color: #bd301d;
