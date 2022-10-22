@@ -6,9 +6,11 @@ const btn = document.getElementById('get-image-btn')
 
 btn.addEventListener ("click", getMatchingCatsArray)
 
-function getMatchingCatsArray (e){
-    const checkedRadio = document.querySelector('input[type = "radio"]:checked')
-    console.log(checkedRadio.value)
+function getMatchingCatsArray (){
+    if(){
+        const selectedEmotions = document.querySelector('input[type="radio"]:checked').value
+        console.log(selectedEmotions)
+    }
 }
 
 
@@ -20,8 +22,9 @@ function highlightCheckedOption(e){
     // so we want to to remove the styling when we click on another option
     const radios = document.getElementsByClassName("radio")
     document.getElementById(e.target.id).parentElement.classList.remove('highlight')
-    for(radio of radios){
-    } 
+    for (let radio of radios){
+        radio.classList.remove('highlight')
+    }
 
     document.getElementById(e.target.id).parentElement.classList.add('highlight')
 }
