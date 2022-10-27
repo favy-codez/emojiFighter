@@ -31,12 +31,13 @@ if(document.querySelector('input[type = "radio"]:checked')){
     const isGif = gifOption.checked
 
     const matchingCatsArray = catsData.filter(function(cat){
-        if(isGif){
-            return cat.emotionTags.includes(selectedEmotion) && cat.isGif
+        if (catsArray.length === 1){
+            return catsArray[0]
         }
-        else{
-            return cat.emotionTags.includes(selectedEmotion)
-        }            
+        else {
+            const randomNumber = Math.floor(Math.random() * catsArray.length)
+            return catsArray[randomNumber]
+        }
 })  
 console.log(matchingCatsArray)
     }  
