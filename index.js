@@ -7,13 +7,13 @@ const gifOption = document.getElementById('gifs-only-option')
 
 btn.addEventListener ("click", getMatchingCatsArray)
 
-function getMatchingCatsArray (){
-    // so we created an if statement 
-    if(document.querySelector('input[type="radio"]:checked')){
-        const selectedEmotions = document.querySelector('input[type="radio"]:checked').value
-        console.log(selectedEmotions)
-    }
-}
+// function getMatchingCatsArray (){
+//     // so we created an if statement 
+//     if(document.querySelector('input[type="radio"]:checked')){
+//         const selectedEmotions = document.querySelector('input[type="radio"]:checked').value
+//         console.log(selectedEmotions)
+//     }
+// }
 
 // so we want to add an event listener to emotionRadios to help us highlight our option
 emotionRadios.addEventListener('change', highlightCheckedOption)
