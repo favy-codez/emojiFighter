@@ -24,7 +24,7 @@ function highlightCheckedOption(e){
 
 
 
-// we want to render this fxn when the gif checkbox is clicked 
+// we want to return an array of cat objects that matches the users criteria
     function getMatchingCatsArray(){
 if(document.querySelector('input[type = "radio"]:checked')){
     const selectedEmotion = document.querySelector('input[type="radio"]:checked').value
