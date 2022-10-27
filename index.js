@@ -2,7 +2,7 @@ import { catsData } from '/data.js'
 
 const emotionRadios = document.getElementById('emotion-radios')
 const btn = document.getElementById('get-image-btn')
-const gif-btn = document.getElementById('gifs-only-option')
+const gifOption = document.getElementById('gifs-only-option')
 
 
 btn.addEventListener ("click", getMatchingCatsArray)
@@ -30,9 +30,10 @@ function highlightCheckedOption(e){
     document.getElementById(e.target.id).parentElement.classList.add('highlight')
 }
 
-function getMatchingCatsArray(){
-    
-}
+// we want to render this fxn when the gif checkbox is clicked 
+// function getMatchingCatsArray(){
+//     const isGif = gifOption.checked
+// }
 
 function getEmotionsArray(cats){
     const emotionsArray = []
