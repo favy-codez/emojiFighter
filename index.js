@@ -3,6 +3,7 @@ import { catsData } from '/data.js'
 const emotionRadios = document.getElementById('emotion-radios')
 const btn = document.getElementById('image-btn')
 const gifOption = document.getElementById('gifs-only-option')
+const memeModal = document.getElementById('meme-modal-inner')
 
 
 btn.addEventListener ("click", renderCat)
@@ -50,7 +51,14 @@ function getSingleCatObject(){
 
 // we want t use the cat object provided by getSingleCatObject to create HTML string which will render it to the DOM
 function renderCat(){
-    getSingleCatObject()
+    const catObject = getSingleCatObject()
+    memeModal.innerHTML =
+    `<img 
+    class="cat-img" 
+    src="./images/CAT IMAGE"
+    alt="CAT ALT TEXT"
+    >
+    `
 }
 
 function getEmotionsArray(cats){
