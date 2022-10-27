@@ -15,7 +15,6 @@ function getMatchingCatsArray (){
     }
 }
 
-
 // so we want to add an event listener to emotionRadios to help us highlight our option
 emotionRadios.addEventListener('change', highlightCheckedOption)
 
@@ -29,6 +28,10 @@ function highlightCheckedOption(e){
     }
 
     document.getElementById(e.target.id).parentElement.classList.add('highlight')
+}
+
+function getMatchingCatsArray(){
+    
 }
 
 function getEmotionsArray(cats){
