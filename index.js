@@ -30,10 +30,6 @@ function highlightCheckedOption(e){
     document.getElementById(e.target.id).parentElement.classList.add('highlight')
 }
 
-// we want to render this fxn when the gif checkbox is clicked 
-// function getMatchingCatsArray(){
-//     const isGif = gifOption.checked
-// }
 
 function getEmotionsArray(cats){
     const emotionsArray = []
@@ -71,5 +67,8 @@ function renderEmotionsRadios(cats){
 renderEmotionsRadios(catsData)
 
 
-
+// we want to render this fxn when the gif checkbox is clicked 
+function getMatchingCatsArray(){
+    const isGif = gifOption.checked
+}
 
