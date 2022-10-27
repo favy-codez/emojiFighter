@@ -1,12 +1,13 @@
 import { catsData } from '/data.js'
 
 const emotionRadios = document.getElementById('emotion-radios')
-const btn = document.getElementById('image-btn')
+const getImageBtn = document.getElementById('get-image-btn')
 const gifOption = document.getElementById('gifs-only-option')
+const memeModalInner = document.getElementById('meme-modal-inner')
 const memeModal = document.getElementById('meme-modal-inner')
 
 
-btn.addEventListener ("click", renderCat)
+getImageBtn.addEventListener('click', renderCat)
 
 // so we want to add an event listener to emotionRadios to help us highlight our option
 emotionRadios.addEventListener('change', highlightCheckedOption)
@@ -55,7 +56,7 @@ function renderCat(){
     memeModal.innerHTML =
     `<img 
     class="cat-img" 
-    src="./images/CAT IMAGE"
+    alt="${catObject.alt}"
     alt="CAT ALT TEXT"
     >
     `
