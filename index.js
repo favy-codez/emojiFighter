@@ -31,9 +31,22 @@ function highlightCheckedOption(e){
 }
 
 // we want to render this fxn when the gif checkbox is clicked 
-function getMatchingCatsArray(){
+    function getMatchingCatsArray(){
+if(document.querySelector('input[type="radio"]:checked')){
+    const selectedEmotion = document.querySelector('input[type="radio"]:checked').value
     const isGif = gifOption.checked
+/*
+Challenge:
+1. Use the .filter() and .includes() methods to get 
+an array of cats which have the selected emotion
+in their emotionTags array. 
+2. Store this array in a const and log it out to check
+it's working. Think: what would be a good name for the
+const?
+*/  
+}  
 }
+// }
 
 function getEmotionsArray(cats){
     const emotionsArray = []
