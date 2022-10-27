@@ -2,6 +2,7 @@ import { catsData } from '/data.js'
 
 const emotionRadios = document.getElementById('emotion-radios')
 const btn = document.getElementById('get-image-btn')
+const gif-btn = document.getElementById('gifs-only-option')
 
 
 btn.addEventListener ("click", getMatchingCatsArray)
