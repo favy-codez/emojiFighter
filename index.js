@@ -1,11 +1,11 @@
 import { catsData } from '/data.js'
 
 const emotionRadios = document.getElementById('emotion-radios')
-const btn = document.getElementById('get-image-btn')
+const btn = document.getElementById('image-btn')
 const gifOption = document.getElementById('gifs-only-option')
 
 
-btn.addEventListener ("click", getMatchingCatsArray)
+btn.addEventListener ("click", renderCat)
 
 // so we want to add an event listener to emotionRadios to help us highlight our option
 emotionRadios.addEventListener('change', highlightCheckedOption)
@@ -31,10 +31,14 @@ if(document.querySelector('input[type = "radio"]:checked')){
     const isGif = gifOption.checked
 
     const matchingCatsArray = catsData.filter(function(cat){
-        return cat.emotionTags.includes(selectedEmotion)
+        if(isGif){
+            return cat.emotionTags.includes(selectedEmotion) && cat.isGif
+        }
+        else{
+            return cat.emotionTags.includes(selectedEmotion)
+        }            
 })  
 console.log(matchingCatsArray)
-
     }  
 }
 
@@ -43,6 +47,10 @@ function getSingleCatObject(){
 
 }
 
+// we want t use the cat object provided by getSingleCatObject to create HTML string which will render it to the DOM
+function renderCat(){
+
+}
 
 function getEmotionsArray(cats){
     const emotionsArray = []
