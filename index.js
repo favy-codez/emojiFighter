@@ -49,7 +49,7 @@ function getSingleCatObject(){
 
 // we want t use the cat object provided by getSingleCatObject to create HTML string which will render it to the DOM
 function renderCat(){
-
+    getSingleCatObject()
 }
 
 function getEmotionsArray(cats){
