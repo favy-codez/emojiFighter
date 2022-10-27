@@ -38,6 +38,11 @@ console.log(matchingCatsArray)
     }  
 }
 
+// we want to return a single cat object selected from the array provided by getMatchingCatsArray
+function getSingleCatObject(){
+
+}
+
 
 function getEmotionsArray(cats){
     const emotionsArray = []
